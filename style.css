@@ -1,129 +1,138 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body{
+    box-sizing: border-box;
+  }
+  
+  body {
     background-color: rgb(231, 230, 230);
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
-}
-
-.container {
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  
+  .container {
     background-color: white;
     padding: 2rem;
-    min-height: 50vh;
-    min-width: 90vw;
-    max-width: 90vw;
-    border-radius: 10%;
-    width: 50vh;
-}
-
-form {
-    margin: 2rem 0 1rem 0;
-
-}
-form select, button, input {
+    border-radius: 1rem;
     width: 100%;
-    border:  none;
-    outline: none;
-    border-radius: 0.75rem;
-}
-
-form select {
-    border: 0.1rem solid lightgrey;
-    height: 1.5rem;
-}
-
-form input {
+    max-width: 500px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #heading {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  #heading div {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  form select,
+  form input {
+    width: 100%;
     border: 0.1rem solid lightgray;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
     font-size: 1rem;
-    border-radius: 0.25rem;
-    height: 2rem;
-    padding-left: 0.5rem ;
-}
-
-.convertBtn button  {
+  }
+  
+  form input {
+    height: 2.5rem;
+  }
+  
+  .convertBtn button {
+    width: 100%;
     background-color: blue;
     color: white;
-    font-size: 1.5rem ;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    height: 2.5rem;
-    margin-top: 1rem;
-}
-.convertBtn button:hover {
- background: rgba(0,0,0,0.5);
-}
-.convertBtn button:active {
+    font-size: 1.2rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .convertBtn button:hover {
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .convertBtn button:active {
     background: green;
     transform: translateY(2px);
-    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-}
-.dropdown {
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .dropdown {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     align-items: center;
-}
-
-.select-container img {
-
-    width: 2rem;
-    margin: 0.25rem;
-}
-
-.select-container {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .select-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 6rem;
-    border-radius: 0.25rem;
-    padding: 0.25rem;
     border: 0.1rem solid lightgray;
-}
-
-.select-container select {
-    border-radius: 0.25rem ;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+    max-width: 150px;
+  }
+  
+  .select-container img {
+    width: 2rem;
+    margin-right: 0.5rem;
+  }
+  
+  .select-container select {
+    width: 100%;
     border: none;
-}
-/* 
-.msg {
-    
-} */
-
-#heading div {
+    outline: none;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  
+  .msg {
     text-align: center;
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        padding: 0 1rem;
-    }
-    .heading {
-        margin: 0;
-    }
-    .heading h1 {
-        font-size: 2rem;
-    }
-    .container {
-        width: 100%;
-        min-height: 50vh;
-        min-width: 90vw;
-        max-width: 90vw;
-    }
-    form select, button, input {
-        width: 100%;
-    }
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 0.5rem;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
     .dropdown {
-        flex-direction: column;
-        align-items: center;
+      flex-direction: column;
+      align-items: center;
     }
+  
     .select-container {
-        width: 100%;
-        margin-bottom: 1rem;
-    }   
-    
-}
+      max-width: 100%;
+      justify-content: center;
+    }
+  
+    .convertBtn button {
+      font-size: 1.1rem;
+    }
+  
+    #heading h1 {
+      font-size: 1.5rem;
+    }
+  
+    .container {
+      padding: 1.5rem;
+    }
+  }
+  
