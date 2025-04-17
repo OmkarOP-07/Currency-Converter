@@ -15,6 +15,8 @@ body{
     background-color: white;
     padding: 2rem;
     min-height: 50vh;
+    min-width: 90vw;
+    max-width: 90vw;
     border-radius: 10%;
     width: 50vh;
 }
@@ -68,6 +70,7 @@ form input {
 }
 
 .select-container img {
+
     width: 2rem;
     margin: 0.25rem;
 }
