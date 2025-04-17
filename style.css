@@ -54,7 +54,11 @@ form input {
 .convertBtn button:hover {
  background: rgba(0,0,0,0.5);
 }
-
+.convertBtn button:active {
+    background: green;
+    transform: translateY(2px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
 .dropdown {
     display: flex;
     justify-content: space-between;
