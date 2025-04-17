@@ -103,8 +103,10 @@ form input {
         padding: 0 1rem;
     }
     .container {
-        width: 90%;
+        width: 100%;
         min-height: 50vh;
+        min-width: 90vw;
+        max-width: 90vw;
     }
     form select, button, input {
         width: 100%;
