@@ -102,6 +102,12 @@ form input {
     body {
         padding: 0 1rem;
     }
+    .heading {
+        margin: 0;
+    }
+    .heading h1 {
+        font-size: 2rem;
+    }
     .container {
         width: 100%;
         min-height: 50vh;
